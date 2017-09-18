@@ -1,0 +1,126 @@
+.mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1024;
+}
+
+.container{
+    width: 800px;
+    height: 600px;
+    background: #fff;
+    margin: 50px auto 0 auto;
+}
+
+.header{
+    color: #fff;
+    font-size: 15px;
+    padding: 15px;
+    background: #00B38B;
+}
+
+.body{
+    padding: 20px;
+    height: 482px;
+    overflow: auto;
+}
+
+.button{
+    width: 226px;
+    margin: auto;
+}
+
+.body p{
+    display: block;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+.body input{
+    height: 28px;
+    padding: 4px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    color: #666;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #e1e1e1;
+    display: block;
+    width: 100%;
+}
+
+.body textarea{
+    // height: 28px;
+    padding: 4px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    color: #666;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #e1e1e1;
+    display: block;
+    width: 100%;
+}
+
+.footer{
+    padding: 16.5px 15px;
+    background: #F4F5F9;
+}
+
+.btn{
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 12px;
+    line-height: 1.53847;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.quxiao,
+.baocun{
+    color: #666;
+    background-color: #fff;
+    border-color: #e1e1e1;
+    border-radius: 3px;
+    width: 106px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 13px;
+    padding: 0;
+    margin-right: 5px;
+}
+
+.baocun{
+    color: #fff;
+    background-color: #00B38B;
+    border-color: #00B38B;
+}
+
+.baocun:hover{
+    color: #fff;
+    background-color: #008063;
+    border-color: #00765b;
+}
+
+.quxiao:hover{
+    color: #666;
+    background-color: #e6e6e6;
+    border-color: #c2c2c2;
+}

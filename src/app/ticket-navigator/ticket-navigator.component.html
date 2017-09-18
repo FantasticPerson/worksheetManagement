@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="large-title">
+    <span>工单管理</span>
+    <span class="refresh"><i class="fa fa-refresh" aria-hidden="true"></i></span>
+  </div>
+  <div class="list-container">
+    <div *ngFor="let item of sheetArr;let i = index;">
+      <div [ngClass]="getClassName(i)">
+      {{item}}<span>{{i+1}}</span>
+      </div>
+    </div>
+  </div>
+</div>

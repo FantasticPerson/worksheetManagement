@@ -1,0 +1,123 @@
+<div class="container">
+  <create-item *ngIf="showAddPanel"></create-item>
+  <div class="header">
+    <span>所有工单</span>
+    <div class="tool-btns">
+      <span class="btn" (click)="onShowAddPanelClick()"><i class="fa fa-plus" aria-hidden="true"></i>新增工单</span>
+      <div>
+        <span class="btn"><i class="iconfont icon-daochu"></i>导出</span>
+        <span class="btn"><i class="iconfont icon-daoru"></i>导入</span>
+      </div>
+    </div>
+  </div>
+  <div class="ud-tab">
+    <div class="right-btn tool-btns">
+      <div>
+        <span class="btn"><i class="fa fa-filter" aria-hidden="true"></i>删选</span>
+      </div>
+      <div>
+        <span class="btn">列<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+      </div>
+    </div>
+    <div class="btn-group">
+      <div class="btn-group-container">
+        <div class="float-left" *ngFor="let item of btnNameArr;let i=index">
+          <span [ngClass]="getClassName(i)">{{getBtnContent(item,i)}}</span>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="item-list-container">
+      <ul class="title-container">
+        <li [style.width.px]="38"><input type="checkbox"/></li>
+        <li [style.width.px]="item.width" *ngFor="let item of titleNameArr;let i = index">
+          <span>{{item.title}}</span>
+        </li>
+      </ul>
+        <ul class="title-container" *ngFor="let item of listData.tickets">
+            <li [style.width.px]="38"><input type="checkbox"/></li>
+          <li [style.width.px]="getwidthByIndex(0)">
+            <span>{{item.ticket.priority}}</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(1)">
+            <span>{{item.ticket.platform_zh_name}}</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(2)">
+            <span>{{item.ticket.source}}</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(3)">
+            <span>{{item.ticket.all_tags}}</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(4)">
+            <span>{{item.ticket.customer_name}}</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(5)">
+            <span></span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(6)">
+            <span>{{item.ticket.agent_group_name}}</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(7)">
+            <span>{{item.ticket.assignee_name}}</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(8)">
+            <span>{{item.ticket.assignee_cellphone}}</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(9)">
+            <span>{{item.ticket.replied_by}}</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(10)">
+            <span>{{item.ticket.creator_nick_name}}</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(11)">
+            <span>{{item.ticket.creator_nick_name}}</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(12)">
+            <span>{{item.ticket.created_at}}</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(13)">
+            <span>{{item.ticket.updated_at}}</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(14)">
+            <span>{{item.ticket.updated_at}}</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(15)">
+            <span>{{item.ticket.updated_at}}</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(16)">
+            <span>{{item.ticket.updated_at}}</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(17)">
+            <span>{{item.ticket.updated_at}}</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(18)">
+            <span>{{item.ticket.updated_at}}</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(19)">
+            <span>{{item.ticket.updated_at}}</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(20)">
+            <span>{{item.ticket.updated_at}}</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(21)">
+            <span>-</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(22)">
+            <span>-</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(23)">
+            <span>{{item.ticket.customer_email}}</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(24)">
+            <span>{{item.ticket.assignee_email}}</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(25)">
+            <span>石港镇</span>
+          </li>
+          <li [style.width.px]="getwidthByIndex(26)">
+            <span>不满意</span>
+          </li>
+        </ul>
+    </div>
+</div>

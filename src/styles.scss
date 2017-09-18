@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: '微软雅黑', 'Microsoft YaHei', '宋体', Tahoma, Helvetica, Arial, sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","PingFang SC","Microsoft YaHei","微软雅黑",SimSun,"宋体",Heiti,"黑体",sans-serif;
+    font-size: 13px;
+    line-height: 1.53847;
+    color: #333;
+    background-color: #eff0f4;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 162px;
+}
+
+@import "~font-awesome/css/font-awesome.min.css";
+@import url('assets/font/iconfont.css');

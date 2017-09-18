@@ -1,0 +1,245 @@
+.container{
+    left: 295px;
+    top:70px;
+    bottom: 15px;
+    right: 15px;
+    background: #fff;
+    border: 1px solid #E6E7EB;
+    padding: 20px 28px;
+    position: absolute;
+}
+
+.header{
+    color: #333;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+
+.tool-btns{
+    float: right;
+    display: static;
+    top:-3px;
+    right: 0;
+    font-size: 13px;
+}
+
+.btn{
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 12px;
+    line-height: 1.53847;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tool-btns span{
+    color: #666;
+    background-color: #fff;
+    border-color: #e1e1e1;
+    margin-right: 4px;
+}
+
+.tool-btns span:hover,
+.tool-btns div span:hover{
+    color: #666;
+    background-color: #e6e6e6;
+    border-color: #c2c2c2;
+}
+
+.tool-btns div{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tool-btns div span{
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    margin-left: 0;
+    position: relative;
+    float: left;
+    color: #666;
+    background-color: #fff;
+    border-color: #e1e1e1;
+    margin-right: 0;
+}
+
+.tool-btns div span:nth-child(2){
+    margin-left: -1px;
+}
+
+.ud-tab{
+    border-bottom: 1px solid #F0F0F0;
+    position: relative;
+    min-height: 32px;
+}
+
+.btn-group{
+    /* position: relative; */
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    margin-right: 150px;
+    margin-bottom: -1px;
+}
+
+.btn-group-container{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.float-left{
+    position: relative;
+    float: left;
+}
+
+.normal-btn{
+    color: #666;
+    background-color: #fff;
+    border-color: #f0f0f0;
+}
+
+.btn-group-container div:not(:first-child):not(:last-child) span{
+    border-radius: 0;
+}
+
+.btn-group-container div:first-child span{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.btn-group-container div:last-child span{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.selected-btn{
+    color: #fff;
+    background-color: #00B38B;
+}
+
+.normal-btn:hover{
+    color: #666;
+    background-color: #e6e6e6;
+}
+
+.selected-btn:hover{
+    color: #fff;
+    background-color: #008063;
+}
+
+.title-container{
+    width:3204px;
+    overflow: hidden;
+    /* position: absolute; */
+    background: #FFF;
+    z-index: 2;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li{
+    font-size: 13px;
+    display: inline-block;
+    padding: 12px 10px 12px 15px;
+    vertical-align: bottom;
+    bottom: 0;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+input[type="checkbox"]{
+    margin: 4px 0 0;
+    line-height: normal;
+    box-sizing: border-box;
+    padding: 0;
+    color: #767676;
+}
+
+.title-container li span{
+    display: block;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 700;
+    color: #555;
+}
+
+.item-list-container ul{
+    position: relative;
+}
+
+.item-list-container ul:not(:first-child) span{
+    font-weight: normal;
+}
+
+.item-list-container ul:not(:first-child):hover{
+    background-color: #f5f5f5;
+}
+
+.item-list-container ul:nth-child(1){
+    background-color: #f5f5f5;
+    
+}
+
+.item-list-container ul:nth-child(1)::before{
+    content: ' ';
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    border-left: 3px solid #00B38B;
+}
+
+
+
+.item-list-container{
+    overflow-x: auto;
+    background: #FFF;
+    z-index: 2;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    /* height: 44px; */
+}
+
+.item-container li span{
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px;
+}
+.item-container li{
+    height: 44px;
+}
+
+.item-container-item{
+    width:3204px;
+}
+
+
